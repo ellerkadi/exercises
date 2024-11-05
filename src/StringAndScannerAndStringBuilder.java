@@ -44,5 +44,31 @@ public class StringAndScannerAndStringBuilder {
         String string = sb.toString();
         System.out.println(string);
 
+        // TASK 6 - Char, creating strings
+
+        char[] data = {'a', 'b', 'c'};
+        String str = new String(data);
+
+        System.out.println(str);
+
+        // TASK 7 - CONCAT (juurde lisama)
+
+        String university = "University of ";
+        String tallinn = "Tallinn";
+        String fullName = university.concat(tallinn);
+        System.out.println(fullName);
+
+        // TASK 8 - Char
+
+        char ch;
+        ch = university.charAt(0);
+        System.out.println(ch);
+
+        // startsWith() - public boolean...
+        // endsWith()
+        // indexOf()
+        // "unhappy".substring(2); "smiles".substring(1, 5) - 1 jääb sisse, 5 välja.
+
+
     }
 }
