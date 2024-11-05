@@ -39,7 +39,6 @@ public class DayOneAndDayTwoExercises {
         } else {
             System.out.println("Number " + thirdNumber + " is odd.");
         }
-        */
 
         // Greatest Number (scanner, if)
 
@@ -55,7 +54,7 @@ public class DayOneAndDayTwoExercises {
         System.out.println("Enter a number: ");
         int sixthNumber = userInput6.nextInt();
 
-        /* if (fourthNumber > fifthNumber && fourthNumber > sixthNumber) {
+        if (fourthNumber > fifthNumber && fourthNumber > sixthNumber) {
             System.out.println("Greatest number is " + fourthNumber);
         } else if (fifthNumber > fourthNumber && fifthNumber > sixthNumber) {
             System.out.println("Greatest number is " + fifthNumber);
@@ -68,6 +67,50 @@ public class DayOneAndDayTwoExercises {
             System.out.println("Greatest number is: " + suurimNumber);
 
          */
+
+        // Convert to Uppercase
+
+        String original = "hello world";
+        System.out.println(original.toUpperCase());
+
+        // Convert to Lowercase
+
+        String original1 = "HELLO WORLD";
+        System.out.println(original1.toLowerCase());
+
+        // Check if String Contains a Substring
+
+        String original2 = "Hello, world!";
+        System.out.println(original2.contains("world"));
+
+        // Get the First Character of a String
+
+        String original3 = "Hello";
+        System.out.println(original3.charAt(0));
+
+        // Replace a Character in a String
+
+        String original4 = "Hello, world!";
+        String regex = "o";
+        System.out.println(original4.replaceAll(regex, "a"));
+
+        // Check if a String Starts and Ends with a Specific Character
+        String original5 = "Hello, world!";
+        System.out.println(original5.startsWith("Hello") && original5.endsWith("world!"));
+
+        // Extract a Substring Between Two Indices
+        String original6 = "Hello, world!";
+        System.out.println(original6.substring(7, 12));
+
+        // Find the First and Last Occurence of a Character
+
+        String original7 = "abracadabra";
+        System.out.println("First position: " + original7.indexOf("a") + " , Last position: " + original7.lastIndexOf("a"));
+
+        // Replace a Word in a Sentence
+
+        String original8 = "Java is fun";
+        System.out.println(original8.replace("fun", "awesome"));
 
     }
 }
