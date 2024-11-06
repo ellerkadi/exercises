@@ -76,41 +76,55 @@ public class DayOneAndDayTwoExercises {
         // Convert to Lowercase
 
         String original1 = "HELLO WORLD";
-        System.out.println(original1.toLowerCase());
+        String lowercase = original1.toLowerCase();
+        System.out.println(lowercase);
 
         // Check if String Contains a Substring
 
         String original2 = "Hello, world!";
-        System.out.println(original2.contains("world"));
+        boolean stringContains = original2.contains("world");
+        System.out.println(stringContains);
 
         // Get the First Character of a String
 
         String original3 = "Hello";
-        System.out.println(original3.charAt(0));
+        char firstCharacter = original3.charAt(0);
+        System.out.println(firstCharacter);
 
         // Replace a Character in a String
 
         String original4 = "Hello, world!";
         String regex = "o";
-        System.out.println(original4.replaceAll(regex, "a"));
+        String replacedCharacter = original4.replaceAll(regex, "a");
+        System.out.println(replacedCharacter);
 
         // Check if a String Starts and Ends with a Specific Character
         String original5 = "Hello, world!";
-        System.out.println(original5.startsWith("Hello") && original5.endsWith("world!"));
+        boolean specificCharacter = original5.startsWith("Hello") && original5.endsWith("world!");
+        System.out.println(specificCharacter);
 
         // Extract a Substring Between Two Indices
         String original6 = "Hello, world!";
-        System.out.println(original6.substring(7, 12));
+        String substring = original6.substring(7, 12);
+        System.out.println(substring);
 
         // Find the First and Last Occurence of a Character
 
         String original7 = "abracadabra";
-        System.out.println("First position: " + original7.indexOf("a") + " , Last position: " + original7.lastIndexOf("a"));
+        char searchChar = 'a';
+
+        int firstPosition = original7.indexOf(searchChar);
+        int lastPosition = original7.lastIndexOf(searchChar);
+
+        System.out.println("First position: " + firstPosition + " , Last position: " + lastPosition);
 
         // Replace a Word in a Sentence
 
         String original8 = "Java is fun";
-        System.out.println(original8.replace("fun", "awesome"));
+        String target = "fun";
+        String replacement = "awesome";
+        String replaced = original8.replace(target, replacement);
+        System.out.println(replaced);
 
     }
 }
