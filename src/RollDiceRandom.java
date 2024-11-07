@@ -1,4 +1,4 @@
-public class Täringumäng {
+public class RollDiceRandom {
     public static void main(String[] args) {
 
         int diceRoll = rollDice();
@@ -6,6 +6,6 @@ public class Täringumäng {
     }
 
     private static int rollDice() {
-        return (int) (Math.random() * 6) + 1;
+        return (int) (Math.random() * 6) + 1; //math.random on olemuselt double, selle pärast peab (int) ette panema
     }
 }
